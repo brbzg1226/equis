@@ -1,0 +1,510 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+    <title>Tablas</title>
+    <style type="text/css">
+        *{
+		margin:0;
+		padding: 0;
+        }
+        table{
+            background-color: #f2f2f2;
+            color: #272d2f;
+            margin-top: 10px;
+    
+	    h2{
+		font-size: 26px;
+		color:#F2F2F2;
+        }
+        
+        #t01, #t01 th, #t01 td, #t02, t02 th, #t02 td{
+            border-collapse:collapse; 
+        }
+        #t01, #t01 th, #t01 td{
+            border: 2px solid #FE724C;
+            padding: 5px;  
+        }
+        #t01 th{
+
+            color: #FE724C;
+            text-align:left;
+        }
+        #t02, #t02 th, #t02 td{
+            border: 2px solid #FFC529;
+            padding: 5px;
+        }
+        #t02 th{
+            background-color: #FE724C;
+            text-align:left;
+        }
+        #t03 tr:nth-child(even){
+            background-color: #272D2F;
+            color: #F2F2F2;
+        }
+        #t03 tr:nth-child(odd){
+            background-color: #FFC529;
+            color: #272D2F;
+        }
+        #t03 th{
+            background-color: #272D2F;
+            color: #F2F2F2;
+            text-align:left;
+        }
+        #t04, #t04 th, #t04 td{
+            border: 2px;
+            padding: 5px;
+        }
+        #t04 td:nth-child(even){
+            background-color: #272D2F;
+            color: #F2F2F2;
+        }
+        #t04 td:nth-child(odd){
+            background-color: #FE724C;
+            color: #F2F2F2;
+        }
+        #t05 {
+            width: 640px;
+        }
+        #t05 th{
+            height: 30px;
+        }
+        #t05 td{
+            height: 20px;
+            padding-left: 10px;
+        }
+        #t05 tr:hover{
+            background-color: #FFC529;
+            color: #FE724C;
+        }
+        #t05 th {
+            background-color: #FE724C;
+        }
+        #t06 {
+            width: 100%
+        }
+        #t06 th, #t06 td{
+            text-align: center;
+            border: 1px solid #FFC529;
+            height: 25px;
+        }
+        t06, #t06 th, #t06 td{
+            border-collapse: collapse;
+        }
+        
+        
+        header,nav,main,footer{
+		width: 960px;
+		/*height: 100px;*/
+		background-color:#272D2F;
+		padding: 50px;
+		margin: 0 auto;
+        }
+	header{
+		text-align: center;
+	}
+	main{
+		background-color:#F2F2F2;
+	}
+	footer{
+		background-color:#FFC529;
+		height: 60px;
+		text-align: center;
+	}
+	section{
+		width: 760px;
+		height: auto;
+		background-color:#FFC529;
+		margin: 20px auto;
+		padding: 20px 20px;
+	}
+    </style>
+    <link href="../css/style.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <header>
+        <h1>Tablas en html</h1>
+    </header> 
+	<nav>
+  <ul>
+    <li>Mi primera pagina</li>
+    <li><a href="tablas.html" target="_blank">Tablas</a>&nbsp;</li>
+    <li><a href="listas.htlm.html" target="_blank">Listas</a>&nbsp;</li>
+    <li><a href="Enlaces.html" target="_blank">Enlaces</a></li>
+	<li><a href="imagenes.html" target="_blank">Imagenes</a></li>
+	<li><a href="video.html" target="_blank">Vídeo</a></li>
+			<li><a href="formularios.html" target="_blank">Formularios</a></li>
+			<li><a href="animate.html" target="_blank">Animate </a></li>
+	  <li><a href="flexbox.html" target="_blank">Flexbox</a></li>
+  </ul>
+	</nav>
+<main>
+        
+  <section>
+        <h2>Tablas simple</h2>
+        <table border= "1" >
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th> Dirección</th>
+                <th>Telefono</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Andrea Lora</td>
+                <td>Calle de las rosas #3</td>
+                <td>2461023891</td>
+            </tr>
+             <tr>
+                <td>Laura González</td>
+                <td>Calle San Pablo #7</td>
+                <td>2468957432</td>
+            </tr>
+             <tr>
+                <td>Alejandro Peña</td>
+                <td>Avenida Independencia#4</td>
+                <td>2465367484</td>
+            </tr>
+             <tr>
+                <td>José Arrieta</td>
+                <td>Calle 31 #45</td>
+                <td>2461234596</td>
+            </tr>
+             <tr>
+                <td>Daniela Castro</td>
+                <td>Calle Margaritas #23</td>
+                <td>2464865213</td>
+            </tr>
+
+            
+        </tbody>
+        <tfoot></tfoot>
+        </table>
+    </section>
+<section>
+    <h2>Tabla con bordes colapsados</h2>
+      <table id="t01" border= "1" >
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th> Dirección</th>
+            <th>Telefono</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Andrea Lora</td>
+            <td>Calle de las rosas #3</td>
+            <td>2461023891</td>
+          </tr>
+          <tr>
+            <td>Laura González</td>
+            <td>Calle San Pablo #7</td>
+            <td>2468957432</td>
+          </tr>
+          <tr>
+            <td>Alejandro Peña</td>
+            <td>Avenida Independencia#4</td>
+            <td>2465367484</td>
+          </tr>
+          <tr>
+            <td>José Arrieta</td>
+            <td>Calle 31 #45</td>
+            <td>2461234596</td>
+          </tr>
+          <tr>
+            <td>Daniela Castro</td>
+            <td>Calle Margaritas #23</td>
+            <td>2464865213</td>
+          </tr>
+        </tbody>
+        <tfoot>
+        </tfoot>
+      </table>
+  </section>
+    
+  <section>
+      <h2>Tabla que abarca más de una columna</h2>
+      <table id="t02" border= "1" >
+        <thead>
+          <tr>
+            <th>Nombre</th>
+            <th> Dirección</th>
+            <th colspan="2">Telefonos</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Andrea Lora</td>
+            <td>Calle de las rosas #3</td>
+            <td>2461023891</td>
+            <td>2464652361</td>
+          </tr>
+          <tr>
+            <td>Laura González</td>
+            <td>Calle San Pablo #7</td>
+            <td>2468957432</td>
+            <td>2464222980</td>
+          </tr>
+          <tr>
+            <td>Alejandro Peña</td>
+            <td>Avenida Independencia#4</td>
+            <td>2465367484</td>
+            <td>2464687956</td>
+          </tr>
+          <tr>
+            <td>José Arrieta</td>
+            <td>Calle 31 #45</td>
+            <td>2461234596</td>
+            <td>2464254789</td>
+          </tr>
+          <tr>
+            <td>Daniela Castro</td>
+            <td>Calle Margaritas #23</td>
+            <td>2464865213</td>
+            <td>2464625369</td>
+          </tr>
+        </tbody>
+        <tfoot>
+        </tfoot>
+      </table>
+  </section>
+    
+  <section>
+    <h2>Tabla con banda o rayas horizontales de diferente color</h2>
+    <table id="t03" border= "1" >
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th> Dirección</th>
+          <th>Telefono</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Andrea Lora</td>
+          <td>Calle de las rosas #3</td>
+          <td>2461023891</td>
+        </tr>
+        <tr>
+          <td>Laura González</td>
+          <td>Calle San Pablo #7</td>
+          <td>2468957432</td>
+        </tr>
+        <tr>
+          <td>Alejandro Peña</td>
+          <td>Avenida Independencia#4</td>
+          <td>2465367484</td>
+        </tr>
+        <tr>
+          <td>José Arrieta</td>
+          <td>Calle 31 #45</td>
+          <td>2461234596</td>
+        </tr>
+        <tr>
+          <td>Daniela Castro</td>
+          <td>Calle Margaritas #23</td>
+          <td>2464865213</td>
+        </tr>
+      </tbody>
+      <tfoot>
+      </tfoot>
+    </table>
+  </section>
+  <section>
+    <h2>Tabla con banda o rayas verticales de diferente color</h2>
+    <table id="t04" border= "1" >
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th> Dirección</th>
+          <th>Telefono</th>
+          <th>Ciudad</th>
+            
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Andrea Lora</td>
+          <td>Calle de las rosas #3</td>
+          <td>2461023891</td>
+           <td>Tlaxcala</td> 
+        </tr>
+        <tr>
+          <td>Laura González</td>
+          <td>Calle San Pablo #7</td>
+          <td>2468957432</td>
+           <td>Tlaxcala</td> 
+        </tr>
+        <tr>
+          <td>Alejandro Peña</td>
+          <td>Avenida Independencia#4</td>
+          <td>2465367484</td>
+           <td>Tlaxcala</td> 
+        </tr>
+        <tr>
+          <td>José Arrieta</td>
+          <td>Calle 31 #45</td>
+          <td>2461234596</td>
+           <td>Tlaxcala</td> 
+        </tr>
+        <tr>
+          <td>Daniela Castro</td>
+          <td>Calle Margaritas #23</td>
+          <td>2464865213</td>
+           <td>Tlaxcala</td> 
+            
+        </tr>
+        <tr>
+          
+        </tr>
+      </tbody>
+      <tfoot>
+      </tfoot>
+    </table>
+  </section>
+  <section>
+    <h2>Tabla con resaltado flotante</h2>
+    <table id="t05" border= "1" >
+      <thead>
+        <tr>
+          <th>Nombre</th>
+          <th> Dirección</th>
+          <th>Telefono</th>
+          <th>Ciudad</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Andrea Lora</td>
+          <td>Calle de las rosas #3</td>
+          <td>2461023891</td>
+          <td>Tlaxcala</td>
+        </tr>
+        <tr>
+          <td>Laura González</td>
+          <td>Calle San Pablo #7</td>
+          <td>2468957432</td>
+          <td>Tlaxcala</td>
+        </tr>
+        <tr>
+          <td>Alejandro Peña</td>
+          <td>Avenida Independencia#4</td>
+          <td>2465367484</td>
+          <td>Tlaxcala</td>
+        </tr>
+        <tr>
+          <td>José Arrieta</td>
+          <td>Calle 31 #45</td>
+          <td>2461234596</td>
+          <td>Tlaxcala</td>
+        </tr>
+        <tr>
+          <td>Daniela Castro</td>
+          <td>Calle Margaritas #23</td>
+          <td>2464865213</td>
+          <td>Tlaxcala</td>
+        </tr>
+        <tr></tr>
+      </tbody>
+      <tfoot>
+      </tfoot>
+    </table>
+  </section>
+    <section style="overflow-x: auto">
+    <h2>Tabla responsive</h2>
+        <table id="t06">
+        <thead>
+            <tr>
+                <th>Nombre</th>
+                <th>Puntos</th>
+                <th>Puntos</th>
+                <th>Puntos</th>
+                <th>Puntos</th>
+                <th>Puntos</th>
+                <th>Puntos</th>
+                <th>Puntos</th>
+                <th>Puntos</th>
+                <th>Puntos</th>
+                <th>Puntos</th>
+                <th>Puntos</th>
+                <th>Puntos</th>
+                <th>Puntos</th>
+                <th>Puntos</th>
+                <th>Puntos</th>
+                <th>Puntos</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+            <td>Martha Lopez</td>
+            <td>85</td>
+            <td>90</td>
+            <td>70</td>
+            <td>85</td>
+            <td>100</td>
+            <td>85</td>
+            <td>80</td>
+            <td>90</td>
+            <td>85</td>
+            <td>75</td>
+            <td>55</td>
+            <td>65</td>
+            <td>80</td>
+            <td>99</td>
+            <td>82</td>
+            <td>90</td>
+            </tr>
+            <tr>
+            <td>Ariadna Guarneros</td>
+            <td>90</td>
+            <td>80</td>
+            <td>80</td>
+            <td>85</td>
+            <td>95</td>
+            <td>90</td>
+            <td>70</td>
+            <td>85</td>
+            <td>100</td>
+            <td>75</td>
+            <td>55</td>
+            <td>65</td>
+            <td>80</td>
+            <td>99</td>
+            <td>82</td>
+            <td>90</td>
+            </tr>
+            <tr>
+            <td>Gerardo Cervantes</td>
+            <td>100</td>
+            <td>70</td>
+            <td>85</td>
+            <td>80</td>
+            <td>80</td>
+            <td>90</td>
+            <td>90</td>
+            <td>95</td>
+            <td>85</td>
+            <td>75</td>
+            <td>55</td>
+            <td>65</td>
+            <td>80</td>
+            <td>99</td>
+            <td>82</td>
+            <td>90</td>
+            </tr>
+            
+        </tbody>
+            <tfoot></tfoot>
+            
+        </table>
+        
+    </section>
+</main>
+    <br>
+
+    <footer> Elaborado por Brenda Baez González</footer>
+</body>
+</html>
